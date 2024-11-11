@@ -7,6 +7,8 @@ from sklearn.model_selection import train_test_split
 import numpy as np
 from keras.models import Sequential
 from keras.layers import Dense
+import tensorflow as tf
+from tensorflow.keras.utils import plot_model
 
 
 df = pd.read_csv('DATASETS/diabetes.csv')
@@ -52,3 +54,21 @@ history = model.fit(X_train,
                     epochs=NB_EPOCHS,
                     batch_size=BATCH_SIZE,
                     verbose=1)
+
+
+
+plot_model(
+    model,
+    to_file='model.png',
+    show_shapes=True,
+    show_dtype=True,
+    show_layer_names=True,
+    rankdir='TB',
+    expand_nested=True,
+    dpi=200,
+    show_layer_activations=True,
+    show_trainable=True
+)
+
+image = Image('model.png')
+display(image)
