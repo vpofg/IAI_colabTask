@@ -72,3 +72,18 @@ plot_model(
 
 image = Image('model.png')
 display(image)
+
+
+instances = X_test[:5]
+predictions = model.predict(instances)
+predicted_classes = (predictions > 0.5).astype("int32")
+
+print("Predicted probabilities for the first 5 instances:", predictions)
+print("Predicted classes for the first 5 instances:", predicted_classes)
+
+new_instances = np.array([
+    [5, 116, 74, 0, 0, 25.6, 0.201, 30],
+    [10, 150, 78, 32, 0, 35.4, 0.282, 45]
+])
+new_predictions = model.predict(new_instances)
+new_predicted_classes = (new_predictions > 0.5).astype("int32")

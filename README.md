@@ -81,4 +81,26 @@ Each neuron is constructed as such:
 
 First each neuron sums up all of the calculations of previous neurons which were multiplied by different weights determined according to connections between neurons. After that the neuron uses an activation function $f(x)=1$ for $\sum w_i*x_i \geq 0$ or $f(x)=0$ for $\sum w_i*x_i < 0$.
 
+## Visualisation
 
+There are 3 layers in the architecture visualisation as seen in the image below:
+
+![Architecture](contents/model.png)
+
+The first two layers are the hidden layers and the last one signified by the 'sigmoid' keyword is the output layer.
+
+### Batch Size
+The **batch size** refers to the number of samples of the data that the model trains on. In our example the batch size is initialized to 16.
+
+```python
+BATCH_SIZE = 16
+```
+In the most basic sense, it means that the model will process 16 different samples of data before adjusting the weights.
+
+### Epochs
+Epochs refer to the number of passes through the entire dataset. In this example we use 1000 epochs.
+
+```python
+NB_EPOCHS = 1000
+```
+It means that the model will go through the training set 1000 times during the training.
