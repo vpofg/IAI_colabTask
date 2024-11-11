@@ -161,4 +161,17 @@ model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy',
 We get different curves for these metrics. They can be observed [here](https://github.com/vpofg/IAI_colabTask/tree/main/contents/Curves).
 
 
+# Bibliography
+
+To answer some questions 
+1. https://ifoadatascienceresearch.github.io/tutorial/comparison/
+2. https://www.aitude.com/supervised-vs-unsupervised-vs-reinforcement/
+3. https://www.ibm.com/topics/decision-trees
+4. https://www.ibm.com/topics/neural-networks
+5. https://www.hopsworks.ai/dictionary/test-set
+6. https://censius.ai/wiki/overfitting-vs-underfitting
+7. https://statisticsbyjim.com/regression/overfitting-regression-models/
+8. https://towardsdatascience.com/types-of-regularization-in-machine-learning-eb5ce5f9bf50
+9. https://www.v7labs.com/blog/overfitting
+10. https://www.ibm.com/think/artificial-intelligence
 
