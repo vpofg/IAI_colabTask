@@ -161,9 +161,10 @@ model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy',
 We get different curves for these metrics. They can be observed [here](https://github.com/vpofg/IAI_colabTask/tree/main/contents/Curves).
 
 
-# Bibliography
+# Part 9 - Bibliography
 
-To answer some questions 
+To answer some questions I have used some of the below websites, perplexity to speed up the search 
+and the links mentioned in the Google Colab.
 1. https://ifoadatascienceresearch.github.io/tutorial/comparison/
 2. https://www.aitude.com/supervised-vs-unsupervised-vs-reinforcement/
 3. https://www.ibm.com/topics/decision-trees
@@ -175,3 +176,22 @@ To answer some questions
 9. https://www.v7labs.com/blog/overfitting
 10. https://www.ibm.com/think/artificial-intelligence
 
+# Part 10 - Feedback
+
+## 1. What was missing?
+I think that some of the instructions where chaotic, and although I appreciate how easy to use 
+and clear Google Colab/Jupyter Notebook format is. Sometimes the phrasing of the questions was a bit confusing at times.
+Besides there was nothing missing from the task and it covered everything I would like such 
+a file to do.
+## 2. Is there anything that you believe should be covered more thoroughly?
+Eventhough the task was pretty time consuming I still believe that each topic, especially the more advanced ones, like 
+Neural Networks. I am a visual learner and I like when what I do and program is visible. That would explain why I have 
+added so many plots to my solution, because from just numbers I cannot draw conclusions well.
+To sum up, more complexity to some topics and more visualisations of the models, regressions and the data.
+## 3. Did you get interested in the topic?
+I think so, I am interested in data science and have some prior experience with python and it's specialised data science libraries and 
+I have studied R briefly. This project really woken up an interest in ML, AI and other related topics. I think I might persue this path.
+## 4. Would you like to know more?
+As I have mentioned previously I would like to study this topic more thoroughly and learn more about ML models and AI.
+## 5. Was it worth it?
+I think it was. It was a great entry-level project which showed the basics of AI and guided me through such a compilcated topics smoothly for the most part
