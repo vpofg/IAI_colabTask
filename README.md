@@ -22,9 +22,38 @@
 9. There are many metrics to **measure the performance** of a certain model. We can measure **accuracy** of the model to know the proportion of correctly predicted data in the whole dataset. We could also implement a **confusion matrix** to break down the predictions into four categories: *True Positives, False Positives, True Negatives*, and *False Negatives*. We could potentially also observe the **precision** of the model so how accurate the model is when making a positive prediction. It is calculated as a ratio of true positives to the sum of true and false positives.
 10. explained in point 6.
 
+# Part 4 - EDA 
+## 1.
+Number of rows: 6 <br>
+Number of columns: 7 
+
+## 2.
+There are 7 variables in the dataset sky, airTemp, humidity, wind, water, forecast, enjoy. Among them 6 are feature variables, without enjoy which depend on the other variables.
+
+# 3. 
+There are 6 instances. Among them, there are 4 (enjoy == yes) and 2 (enjoy == no)
+
+## 4. 
+The answer would be temperature, as every time the temperature is warm, the enjoy variable is always yes. And when the temperature is cool, the enjoy variable is always no.
+
+## 5.
+Number of items with humidity == 'high': 4
+Indices of items with humidity == 'high': [1, 2, 3, 5]
 
 
-
+# Part 5 - Linear Regression
+## 1. What do the variables mean?
+![Table](contents/SCR-20241111-qixt.png)
+## 2. How do these datasets differ?
+The cpu_vendor.csv has information on the vendors places in the first column. So it also has one more column (more variables).
+## 3. What type is the vendor and class data series?
+`vendor => object` <br>
+`class => int64 (integer)`
+## 4. String cannot be used in linear regression.
+When using `df['vendor'] = pd.get_dummies(df['vendor'])` we get an Error. In my case I have used concat to properly attach the 'dummyfied' vendor column to the dataset.
+## 5. What are the differences in the scores of the models? What is the mathematical complexity of the models?
+ The CPU model score is: 0.8806919151908303
+ The CPU_Vendor score is: 0.8893455830696773
 # Part 6 - Decision Trees
 The values *gini* and *entropy* are criteria meassureing the quality of decision tree split. Mathematically the **gini** index indicates how impure and mixed the data is. the value ranges between 0 and 1. The closer to 0 the purer the dataset is. On the other hand the **entropy** meassures the uncertainty and randomness. This index also ranges between 0 and 1, where 0 indicates all elements belonging to the same class.
 <br/>
@@ -118,4 +147,6 @@ After changing the metrics like Precision, Recall, AUC
 model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy', Precision(), Recall(), AUC()])
 ```
 We get different curves for these metrics. They can be observed [here](https://github.com/vpofg/IAI_colabTask/tree/main/contents/Curves).
+
+
 

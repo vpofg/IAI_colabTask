@@ -13,10 +13,6 @@ datatypeC = df['class'].dtype
 print("Data type of the 'vendor' column:", datatypeV)
 print("Data type of the 'class' column:", datatypeC)
 
-# Task 4
-# df['vendor'] = pd.get_dummies(df['vendor']) ERROR
-df = pd.concat([pd.get_dummies(df['vendor']), df.drop('vendor', axis=1)], axis=1)
-
 # Task 5
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
