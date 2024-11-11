@@ -108,6 +108,6 @@ It means that the model will go through the training set 1000 times during the t
 # Part 8 - Validation
 Below is the image generated from the NN model:
 
-![Accuracy](contents/accuracy.png)
+![Accuracy](contents/Curves/accuracy.png)
 
 We can interpret that the model is doing just fine, as there is a big similarity between the training set and the test set. 
