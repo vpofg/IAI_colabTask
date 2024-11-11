@@ -27,3 +27,21 @@
 
 ## Part 6 - Decision Trees
 The values *gini* and *entropy* are criteria meassureing the quality of decision tree split. Mathematically the **gini** index indicates how impure and mixed the data is. the value ranges between 0 and 1. The closer to 0 the purer the dataset is. On the other hand the **entropy** meassures the uncertainty and randomness. This index also ranges between 0 and 1, where 0 indicates all elements belonging to the same class.
+<br/>
+After dropping the airTemp column, we can observe on the *decision_tree2.png* how the tree diverges into more branches.
+<br/>
+
+### Feature and Threshold (X <= R):
+This indicates the feature (X) and the threshold value (R) used to split the data at this node.
+If the condition is true, the left child node is followed; otherwise, the right child node is followed.
+
+### Entropy (gini/entropy = Y):
+This shows the impurity measure (Gini impurity or entropy) at this node.
+Lower values indicate purer nodes.
+
+### Samples (samples = Z):
+This indicates the number of samples (data points) that reach this node.
+
+### Value (value = V):
+This shows the distribution of samples among the classes at this node.
+For example, value = [a, b] means there are a samples of class 0 and b samples of class 1.

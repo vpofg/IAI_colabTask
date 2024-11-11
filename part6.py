@@ -39,3 +39,19 @@ graph.write_png('decision_tree2.png')
 
 image = Image('decision_tree2.png')
 display(image)
+
+# Predicting 'enjoy' 
+instances = x2.head(5)
+predictions = clf.predict(instances)
+print("Predictions for the first 5 instances:", predictions)
+
+new_instances = pd.DataFrame({
+    'waterTemp': [75, 80],
+    'humidity': [60, 70],
+    'wind': [10, 5],
+    'cloud': [20, 50]
+})
+
+new_instances = pd.get_dummies(new_instances).reindex(columns=columns, fill_value=0)
+new_predictions = clf.predict(new_instances)
+print("Predictions for new instances:", new_predictions)
