@@ -1,3 +1,13 @@
+# Part 0 - How to
+The below is a report for Into to AI classes. The README file is the answers to all questions from the google colab. Besides there is python code for each part. To replicate the results simply run any file of interest in your favourite IDE. 
+
+## DATASETS 
+All datasets used are in the DATASETS directory. They are available [here](https://scikit-learn.org/stable/datasets.html).
+
+## contents
+In the contents directory, the generated trees and curves are located, but if you run certain files, the images will generate again.
+
+# Part 1 - Reviewing Questions
 ## Questions
 1. What are the differences between supervised, unsupervised, and reinforcement learning?
 2. How is regression different from classification?
@@ -43,7 +53,7 @@ Indices of items with humidity == 'high': [1, 2, 3, 5]
 
 # Part 5 - Linear Regression
 ## 1. What do the variables mean?
-![Table](contents/scrsht/SCR-20241111-qixt.png)
+![Table](img/SCR-20241111-qixt.png)
 ## 2. How do these datasets differ?
 The cpu_vendor.csv has information on the vendors places in the first column. So it also has one more column (more variables).
 ## 3. What type is the vendor and class data series?
@@ -55,7 +65,7 @@ When using `df['vendor'] = pd.get_dummies(df['vendor'])` we get an Error. In my 
  The CPU model score is: 0.8806919151908303
  The CPU_Vendor score is: 0.8893455830696773
 ## 6. What are the coefficients of the regression equation?
-![Coef](contents/scrsht/SCR-20241111-qnid-2.png)
+![Coef](img/SCR-20241111-qnid-2.png)
 # Part 6 - Decision Trees
 The values *gini* and *entropy* are criteria meassureing the quality of decision tree split. Mathematically the **gini** index indicates how impure and mixed the data is. the value ranges between 0 and 1. The closer to 0 the purer the dataset is. On the other hand the **entropy** meassures the uncertainty and randomness. This index also ranges between 0 and 1, where 0 indicates all elements belonging to the same class.
 <br/>
