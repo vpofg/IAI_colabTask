@@ -1,4 +1,4 @@
-### Questions
+## Questions
 1. What are the differences between supervised, unsupervised, and reinforcement learning?
 2. How is regression different from classification?
 3. What are linear regression, decision tree, and neural network?
@@ -10,7 +10,7 @@
 9. What metrics can be used to measure the model's performance in supervised learning, and what is their interpretation?
 10. What is cross-validation?
 
-### Answers
+## Answers
 1. Supervised, unsupervised, and reinforcement learning are three primary types of machine learning, each with distinct characteristics. **Supervised learning** uses labeled datasets to train models that predict outcomes, making it suitable for classification and regression tasks. In contrast, **unsupervised learning** works with unlabeled data to discover hidden patterns or groupings, commonly applied in clustering and association problems. **Reinforcement learning** involves an agent learning through trial and error by interacting with an environment, receiving rewards for "job well-done" and penalties when it's wrong based on the ideal outcome defined.
 2. Both **regression** and **classification** are techniques of **supervised** learning. **Regression** simply recognizes patterns and predicts future data based on the relationship between inputs and outputs. It's used for continuous numerical values. On the other hand **classification** aims to assign values to predefined categories. The data is discrete, and can be grouped. In both cases the data used is labeled, but both techniques use this for their different purposes.
 3. **Linear regression** is a statistical method of fitting data into a linear equation. It is used for predicting outcomes of continuous data. **Decision tree** is a supervised learning algorithm which operates in a hierarchal structure of nodes and vertices. It can be used for both **regression** and **classification** techniques. They operate based on decisions which are represented by **decision nodes** and lead to outcomes represented by **leaf nodes**. The last term **Neural Networks** describes a model structured from interconnected layers of nodes (called **neurons**). In this model each neuron processes the input and passes it through an activation function to determine outputs. The data does not need to be linear and the model is effective for e.g. natural language processing or image recognition.
@@ -25,7 +25,7 @@
 
 
 
-## Part 6 - Decision Trees
+# Part 6 - Decision Trees
 The values *gini* and *entropy* are criteria meassureing the quality of decision tree split. Mathematically the **gini** index indicates how impure and mixed the data is. the value ranges between 0 and 1. The closer to 0 the purer the dataset is. On the other hand the **entropy** meassures the uncertainty and randomness. This index also ranges between 0 and 1, where 0 indicates all elements belonging to the same class.
 <br/>
 After dropping the airTemp column, we can observe on the *decision_tree2.png* how the tree diverges into more branches.
@@ -46,13 +46,39 @@ This indicates the number of samples (data points) that reach this node.
 This shows the distribution of samples among the classes at this node.
 For example, value = [a, b] means there are a samples of class 0 and b samples of class 1.
 
-### Explanation of Parameters
+## Explanation of Parameters
 
-#### max_depth:
+### max_depth:
 This parameter specifies the maximum depth of the tree. Limiting the depth of the tree helps prevent overfitting.
 
-#### min_samples_split:
+### min_samples_split:
 This parameter specifies the minimum number of samples required to split an internal node.
 
-#### min_samples_leaf:
+### min_samples_leaf:
 This parameter specifies the minimum number of samples required to be at a leaf node.
+
+# Part 7 - Neural Networks.
+## Notes
+Neural networks are a type ML framework that is based on how humans neurons work in our brains. Algorithms based on that technology are aiming to replicate the cognitive abilities of the human brain to recognize patterns and imporve predicitons. 
+Structure of Neural Networks
+
+## Layers:
+- **Input Layer**: This is the first layer, where data enters the network. Each neuron in this layer represents a feature of the input data.
+- **Hidden Layers**: These layers perform various transformations on the inputs received from the previous layer. The number of hidden layers can vary, and networks with multiple hidden layers are often referred to as deep neural networks
+- **Output Layer**: This final layer produces the output of the network, which can be a classification label, a prediction, or other types of results based on the task at hand.
+
+## Usage:
+- Image Recognition
+- Natural Language Processing (NLP)
+- Predictive Modeling
+- Reinforcement Learning
+
+## Neurons 
+
+Each neuron is constructed as such:
+
+![Neuron](img/1_UA30b0mJUPYoPvN8yJr2iQ.webp "The Neuron construction")
+
+First each neuron sums up all of the calculations of previous neurons which were multiplied by different weights determined according to connections between neurons. After that the neuron uses an activation function $f(x)=1$ for $\sum w_i*x_i \geq 0$ or $f(x)=0$ for $\sum w_i*x_i < 0$.
+
+
