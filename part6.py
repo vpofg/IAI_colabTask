@@ -25,3 +25,17 @@ graph.write_png('decision_tree.png')
 image = Image('decision_tree.png')
 display(image)
 
+# Drop the 'airTemp' column
+x2 = pd.get_dummies(df.drop(['enjoy', 'airTemp'], axis=1))
+y2 = df['enjoy']
+
+clf = clf_entropy.fit(x2, y2)
+
+columns = x2.columns
+
+dot_data = tree.export_graphviz(clf, out_file=None, rounded=True, filled=True, feature_names=columns)
+graph = pydotplus.graph_from_dot_data(dot_data)
+graph.write_png('decision_tree2.png')
+
+image = Image('decision_tree2.png')
+display(image)
