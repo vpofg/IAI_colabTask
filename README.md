@@ -110,4 +110,12 @@ Below is the image generated from the NN model:
 
 ![Accuracy](contents/Curves/accuracy.png)
 
-We can interpret that the model is doing just fine, as there is a big similarity between the training set and the test set. 
+We can interpret that the model is doing just fine, as there is a big similarity between the training set and the test set.
+
+After changing the metrics like Precision, Recall, AUC
+
+```python
+model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy', Precision(), Recall(), AUC()])
+```
+We get different curves for these metrics. They can be observed [here](https://github.com/vpofg/IAI_colabTask/tree/main/contents/Curves).
+
