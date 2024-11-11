@@ -45,3 +45,14 @@ This indicates the number of samples (data points) that reach this node.
 ### Value (value = V):
 This shows the distribution of samples among the classes at this node.
 For example, value = [a, b] means there are a samples of class 0 and b samples of class 1.
+
+### Explanation of Parameters
+
+#### max_depth:
+This parameter specifies the maximum depth of the tree. Limiting the depth of the tree helps prevent overfitting.
+
+#### min_samples_split:
+This parameter specifies the minimum number of samples required to split an internal node.
+
+#### min_samples_leaf:
+This parameter specifies the minimum number of samples required to be at a leaf node.
