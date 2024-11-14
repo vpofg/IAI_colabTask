@@ -40,7 +40,7 @@ Number of columns: 7
 ## 2.
 There are 7 variables in the dataset sky, airTemp, humidity, wind, water, forecast, enjoy. Among them 6 are feature variables, without enjoy which depend on the other variables.
 
-# 3. 
+## 3. 
 There are 6 instances. Among them, there are 4 (enjoy == yes) and 2 (enjoy == no)
 
 ## 4. 
