@@ -29,7 +29,7 @@ y = df['Outcome'].to_numpy()
 print("The type of x is:" + str(x.dtype))
 print("The type of y is:" + str(y.dtype))
 
-X_train, X_test, y_train, y_test = train_test_split(x, y, test_size=0.25, random_state=0) # what is going on here?
+X_train, X_test, y_train, y_test = train_test_split(x, y, test_size=0.25, random_state=0)
 
 ### NEURAL NETWORK TRAINING ###
 
